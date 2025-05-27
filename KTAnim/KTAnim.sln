@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36119.2 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KTAnim", "KTAnim.csproj", "{F544B734-ACEF-4711-BD6B-B43C24CCADCA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F544B734-ACEF-4711-BD6B-B43C24CCADCA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F544B734-ACEF-4711-BD6B-B43C24CCADCA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F544B734-ACEF-4711-BD6B-B43C24CCADCA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F544B734-ACEF-4711-BD6B-B43C24CCADCA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A85E2718-DC3B-4141-B975-FCCB15B40716}
+	EndGlobalSection
+EndGlobal
