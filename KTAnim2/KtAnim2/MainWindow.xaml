@@ -1,0 +1,35 @@
+﻿<Window x:Class="KtAnim2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Storyboard Animation" Height="300" Width="400">
+    <Window.Resources>
+        <Storyboard x:Key="RectangleAnimation" RepeatBehavior="Forever">
+            <!-- Перемещение -->
+            <DoubleAnimation
+                Storyboard.TargetName="animatedRect"
+                Storyboard.TargetProperty="(Canvas.Left)"
+                From="0" To="300" Duration="0:0:3" AutoReverse="True"/>
+                
+            <!-- Пульсация размеров -->
+            <DoubleAnimation
+                Storyboard.TargetName="animatedRect"
+                Storyboard.TargetProperty="Width"
+                From="50" To="100" Duration="0:0:1.5" AutoReverse="True"/>
+            <DoubleAnimation
+                Storyboard.TargetName="animatedRect"
+                Storyboard.TargetProperty="Height"
+                From="50" To="100" Duration="0:0:1.5" AutoReverse="True"/>
+        </Storyboard>
+    </Window.Resources>
+    
+    <Canvas>
+        <Rectangle x:Name="animatedRect" Width="50" Height="50" Fill="Blue"
+                   Canvas.Left="0" Canvas.Top="100"/>
+    </Canvas>
+    
+    <Window.Triggers>
+        <EventTrigger RoutedEvent="Window.Loaded">
+            <BeginStoryboard Storyboard="{StaticResource RectangleAnimation}"/>
+        </EventTrigger>
+    </Window.Triggers>
+</Window>
